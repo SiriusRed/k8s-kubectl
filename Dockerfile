@@ -1,13 +1,16 @@
 FROM alpine
 
-LABEL maintainer="Lachlan Evenson <lachlan.evenson@gmail.com>"
+# FORKED
+# LABEL maintainer="Lachlan Evenson <lachlan.evenson@gmail.com>"
+
+LABEL maintainer="Serhii M. <sergio.mikhno@gmail.com>"
 
 ARG VCS_REF
 ARG BUILD_DATE
 
 # Metadata
 LABEL org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="https://github.com/lachie83/k8s-kubectl" \
+      org.label-schema.vcs-url="https://github.com/SiriusRed/k8s-kubectl" \
       org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.docker.dockerfile="/Dockerfile"
 
